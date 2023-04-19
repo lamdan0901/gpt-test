@@ -36,6 +36,10 @@ module.exports = withBundleAnalyzer({
         source: `/api/:path*`,
         destination: `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/:path*`,
       },
+      {
+        source: '/:path*',
+        destination: '/index.html',
+      },
     ];
   },
 });
