@@ -1,0 +1,31 @@
+{
+  "translation": {
+    "hello": "Hello",
+    "logo-title": "Ghepanhdep",
+    "trending": "Trending",
+    "new": "New",
+    "blogs": "Blogs",
+    "categories": "Categories",
+    "about-us": "About Us",
+    "terms-and-condition": "Terms and Conditions",
+    "privacy-policy": "Privacy Policy",
+    "search-template": "Search template",
+    "new-template": "New template",
+    "upload": "Upload",
+    "create-photo": "Create photo",
+    "your-name": "Your name",
+    "description": "Description",
+    "maybe-you-will-like": "Maybe you will like",
+    "search-style": "Search style",
+    "select-style": "Select style",
+    "change-style": "Change style",
+    "post-name": "Post name",
+    "post-meta": "Share by: {{author}}, {{date}} ",
+    "copyright": "Ghepanhdep.xyz © {{year}}.",
+    "blog": "Blog",
+    "download": "Download",
+    "continue-edit": "Continue edit",
+    "image-size": "Image size",
+    "select-size": "Select size"
+  }
+}
