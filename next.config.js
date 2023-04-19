@@ -1,30 +1,31 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
 });
 
 module.exports = withBundleAnalyzer({
   eslint: {
-    dirs: ["."],
+    dirs: ['.'],
   },
   poweredByHeader: false,
   trailingSlash: false,
-  basePath: "",
+  basePath: '',
   images: {
     domains: [
-      process.env.NEXT_PUBLIC_CLOUD_FRONT_URL.replace(/^https?:\/\//, ""),
+      process.env.NEXT_PUBLIC_CLOUD_FRONT_URL.replace(/^https?:\/\//, ''),
     ],
   },
   reactStrictMode: true,
   publicRuntimeConfig: {
     BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
+    SERVICE_VERSION: process.env.SERVICE_VERSION,
     CLOUD_FRONT_URL: process.env.NEXT_PUBLIC_CLOUD_FRONT_URL,
   },
   async redirects() {
     return [
       {
-        source: "/",
-        destination: "/trending/",
+        source: '/',
+        destination: '/trending/',
         permanent: true,
       },
     ];
