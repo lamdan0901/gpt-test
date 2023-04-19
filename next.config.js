@@ -30,12 +30,12 @@ module.exports = withBundleAnalyzer({
       },
     ];
   },
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: `/api/:path*`,
-  //       destination: `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/:path*`,
-  //     },
-  //   ];
-  // },
+  async rewrites() {
+    return [
+      {
+        source: `/api/:path*`,
+        destination: `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/:path*`,
+      },
+    ];
+  },
 });

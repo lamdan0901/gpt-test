@@ -4,7 +4,7 @@ import getConfig from 'next/config';
 const { publicRuntimeConfig } = getConfig();
 
 const CI = axios.create({
-  baseURL: publicRuntimeConfig.BASE_URL,
+  baseURL: `${publicRuntimeConfig.BASE_URL}/api`,
   timeout: 20000,
 });
 
