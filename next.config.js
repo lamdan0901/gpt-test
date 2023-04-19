@@ -18,7 +18,6 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   publicRuntimeConfig: {
     BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
-    SERVICE_VERSION: process.env.SERVICE_VERSION,
     CLOUD_FRONT_URL: process.env.NEXT_PUBLIC_CLOUD_FRONT_URL,
   },
   async redirects() {
